@@ -37,7 +37,14 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void create_node(stack_t **head, int num);
+extern stack_t *top_stack;
+
+stack_t *create_elements(int num);
 void print_all(stack_t **head);
+void nop(stack_t **head, int lineno);
+void addTops(stack_t **head, int lineno);
+void swapnodes(stack_t **head, int lineno);
+void printTop(stack_t **head, int lineno);
+void free_elements(void);
 
 #endif /* MAIN_H */

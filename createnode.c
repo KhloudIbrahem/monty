@@ -5,18 +5,15 @@
  * @num: the value.
  * Return: Nothing.
  */
-void create_node(stack_t **head, int num)
+stack_t *create_elements(int num)
 {
-	stack_t *top, *h;
+	stack_t *top;
 
-	h = *head;
 	top = malloc(sizeof(stack_t));
 	if (top == NULL)
 		return;
-	if (h)
-		h->prev = top;
-	top->n = num;
-	top->next = *head;
+	top->next = NULL;
 	top->prev = NULL;
-	*head = top;
+	top->n = num;
+	return (top);
 }
