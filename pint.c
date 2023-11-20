@@ -7,7 +7,7 @@
  */
 void printTop(stack_t **head, int lineno)
 {
-	if (head == NULL || (*head) == NULL)
+	if (head == NULL || *head == NULL)
 		return;
 	printf("%d\n", (*head)->n);
 }

@@ -46,5 +46,6 @@ void addTops(stack_t **head, int lineno);
 void swapnodes(stack_t **head, int lineno);
 void printTop(stack_t **head, int lineno);
 void free_elements(void);
+void pop(stack_t **head, int lineno);
 
 #endif /* MAIN_H */
